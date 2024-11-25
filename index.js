@@ -31,6 +31,11 @@ app.use("/user", UserRoute);
 app.use("/contact", ContactRoute);
 app.use("/product-details", BookRoute);
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
